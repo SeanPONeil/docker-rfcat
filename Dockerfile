@@ -2,6 +2,7 @@ FROM python:2.7.17
 
 RUN apt-get update
 RUN apt-get upgrade -y
+RUN apt-get install libusb-1.0
 
 # install rfcat-master
 WORKDIR /tmp
